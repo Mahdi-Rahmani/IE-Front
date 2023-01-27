@@ -1,0 +1,612 @@
+body, html {
+    background-color: rgb(99, 94, 94);
+}
+
+/* this is the main container */
+.container {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* design box for first, topics, and books  */
+.box_parts {
+    height: calc(100vh - 10rem - 16px);
+    min-height: 532px;
+    margin-bottom: 1rem;
+    background-color: white;
+}
+
+/* Footer */
+.footer {
+    height: 4rem;
+    background-color: #222324;
+    display: flex;
+    flex-direction: row;
+}
+
+#footer_left{
+    float: left;
+    width: calc(50% - 300px);
+    min-width: 45%;
+    height: 5rem;
+}
+
+#footer_right{
+    float: right;
+    width: calc(100%);
+    min-width: 40%;
+    height: 5rem;
+    text-align: center;
+    margin-left: 100px;
+}
+
+#left_btn_table {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 10px;
+    border-spacing: 15px;
+}
+
+#left_btn_link{
+    color: white;
+    text-decoration: inherit;
+    font-style: bold;
+    transition: 0.5s;
+    cursor: pointer;
+    font-size: 14px;
+}  
+
+#left_btn_link:hover {
+text-shadow: 0 0 5px white,
+            0 0 25px white,
+            0 0 50px white,
+            0 0 100px white;
+}
+/* End of the Footer part */
+
+/* Header */
+#header_img{
+    height: calc(96vh - 10rem - 16px);
+    min-height: 500px;
+    width: 98%;
+    object-fit: cover;
+    padding: 10px;
+}
+
+#header_btn_link{
+    color: Black;
+    text-decoration: inherit;
+    font-style: bold;
+    font-size: 16px;
+}  
+
+#header_centered_first_text {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+    width: fit-content;
+    letter-spacing: 25px;
+    text-transform: capitalize;
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+#header_centered_second_text {
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    color: white;
+    font-size: 19px;
+    letter-spacing: 15px;
+    text-transform: capitalize;
+    font-weight: 400;
+    padding-top: 20px;
+    margin-top: 10px;
+}
+
+#btn{
+    border-radius: 20px;
+    font-size: 14px;
+    background-color: white;
+    border: none;
+    height: 40px;
+    width: 300px;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: black;
+    transition: 0.5s;
+    margin-top: 10px;
+}
+
+#btn:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;  
+    top: 11px;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#btn:hover{
+    padding-right: 24px;
+    padding-left:8px;
+    background-color: rgba(39, 149, 61, 1);
+}
+
+#btn:hover:after {
+    opacity: 1;
+    right: 10px;
+}
+
+/* loading animation */
+h1 {
+    /* for chrome and safari*/
+    -webkit-animation-duration: 2s;
+    -webkit-animation-name: slidein;
+
+    /*for firefox*/
+    -moz-animation-duration: 2s;
+    -moz-animation-name: slidein;
+
+        /* for opera*/
+    -o-animation-duration: 2s;
+    -o-animation-name: slidein;
+
+        /* Standard syntax*/
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+h2 {
+    /* for chrome and safari*/
+    -webkit-animation-duration: 3s;
+    -webkit-animation-name: slidein;
+
+    /*for firefox*/
+    -moz-animation-duration: 3s;
+    -moz-animation-name: slidein;
+
+        /* for opera*/
+    -o-animation-duration: 3s;
+    -o-animation-name: slidein;
+
+        /* Standard syntax*/
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@-webkit-keyframes slidein {
+from {
+    margin-left: 100%;
+    width: 300%;
+}
+
+to {
+    margin-left: 0%;
+    width: 100%;
+}
+}
+
+@-moz-keyframes slidein {
+from {
+    margin-left: 100%;
+    width: 300%;
+}
+
+to {
+    margin-left: 0%;
+    width: 100%;
+}
+}
+@-o-keyframes slidein {
+from {
+    margin-left: 100%;
+    width: 300%;
+}
+
+to {
+    margin-left: 0%;
+    width: 100%;
+}
+}
+@keyframes slidein {
+from {
+    margin-left: 100%;
+    width: 300%;
+}
+
+to {
+    margin-left: 0%;
+    width: 100%;
+}
+}
+/* End of the Header part */
+/* Topics */
+
+#title_div{
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 2%;
+    height: calc(94vh - 10rem - 16px);
+    min-height: 500px;
+    background-image:
+    linear-gradient(63deg, rgba(72, 19, 171, 0.71) 34%, rgba(39, 149, 61, 0.6) 40%, rgba(62, 118, 174, 0.6) 93%),
+    url('img/Background.jpg');
+    background-size: cover;
+}
+
+.card {
+    box-sizing: border-box;
+    width: calc(50% - 200px);
+    height: calc(80vh - 10rem - 16px);
+    min-height: 400px;
+    margin: 30px;
+    margin-top: 60px;
+    background: rgba(230, 230, 230, 0.8);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+  }
+  
+  .card:hover {
+    border: none;
+    transform: scale(1.1);
+  }
+  
+  .avatar{
+    /* width: 150px;  */
+    width: calc(50%);
+    height: 150px;
+    opacity: 0.6;
+    margin-top: 20px;
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  h3{
+    font-size: 20px;
+    font-style: bold;
+    color: rgb(75, 74, 74);
+  }
+  p{
+    font-size: 14px;
+    color: rgb(75, 74, 74);
+  }
+/* End of the Topics*/
+
+/* Books */
+.books_container{
+    display: flex;
+    justify-content: center;
+}
+h5{
+    font-size: 14px;
+    font-style: bold;
+    color: rgb(75, 74, 74);
+}
+#book_title {
+    color: -webkit-linear-gradient(45deg, #037dff,#0091ff,#3006ff,#004cff);
+    background-clip: text;
+    font-size: 30px;
+    margin-top: 0px;
+    padding-top: 20px;
+}
+
+#book_title:hover {
+text-shadow:0px 0px 20px #1000ea;
+-moz-transition: all 0.5s ease-in;
+-o-transition: all 0.5s ease-in;
+-webkit-transition: all 0.5s ease-in;
+transition: all 0.5s ease-in;
+}
+
+
+.book {
+    box-sizing: border-box;
+    width: calc(50% - 200px);
+    height: calc(80vh - 10rem - 16px);
+    min-height: 400px;
+    margin: 30px;
+    margin-top: 20px;
+    background: rgba(230, 230, 230);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+  }
+
+  .book_img{
+    width: calc(50%);
+    /* min-width: 150px; */
+    height: 260px;
+    opacity: 0.6;
+    margin-top: 10px;
+  }
+   /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: white;
+    width: calc(50% - 200px);
+    height: calc(80vh - 10rem - 16px);
+    min-height: 400px;
+    margin: 30px;
+    margin-top: 20px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: rgba(39, 149, 61, 0.6);
+    color: white;
+    transform: rotateY(180deg);
+  }  
+/* End of the Books */
+
+/* popup */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 1);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+    z-index: 100;
+  }
+  
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: fit-content;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color: #06D85F;
+  }
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+  }
+  
+  @media screen and (max-width: 700px){
+    .box{
+      width: 70%;
+    }
+    .popup{
+      width: 70%;
+    }
+  }
+
+#header_btn_link_popup{
+    color: Black;
+    text-decoration: inherit;
+    font-style: bold;
+    font-size: 16px;
+}
+
+#header_btn_link_popup:hover{
+    color: white;
+    text-shadow: 0 0 5px white,
+            0 0 25px white,
+            0 0 50px white,
+            0 0 100px white;
+}  
+
+/* End of popup */
+
+/* Menu */
+
+.lower{
+    position: fixed;
+    left: 90%;
+    top: 2px;
+    width: 20px;
+    height: 5px;
+    z-index: 1;
+    margin:1% auto;
+    padding:20px;
+    background:transparent;
+    border-radius: 50%;
+    text-align: center;
+    color: rgba(39, 149, 61, 0.6);
+  }
+   
+  input{
+    display:none;
+  }
+  
+  .lower label{
+    font-family: 'NotCourierSans';
+    text-transform:uppercase;
+    font-size:30px;
+    text-align:center;
+  }
+  
+  .lower label:hover{
+    cursor:pointer;
+  }
+  
+  .overlay{
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(0,0,0,0.9);
+  }
+  
+  .overlay label{
+      width: 58px;
+      height:58px;
+      position: absolute;
+      right: 40px;
+      top: 40px;
+      background: url('https://tympanus.net/Development/FullscreenOverlayStyles/img/cross.png');
+      z-index: 100;
+      cursor:pointer;
+  }
+  
+  .overlay nav {
+      text-align: center;
+      position: relative;
+      top: 50%;
+      height: 60%;
+      font-size: 40px;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+  }
+  
+  .overlay ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      display: inline-block;
+      height: 100%;
+      position: relative;
+  }
+  
+  .overlay ul li {
+      display: block;
+      height: 20%;
+      height: calc(100% / 5);
+      min-height: 54px;
+  }
+  
+  .overlay ul li a {
+      font-weight: 100;
+      display: block;
+      color: white;
+    text-decoration:none;
+      -webkit-transition: color 0.2s;
+      transition: color 0.2s;
+    font-family: 'NotCourierSans';
+    text-transform:uppercase;
+  }
+  
+  .overlay ul li a:hover,
+  .overlay ul li a:focus {
+      color: rgba(39, 149, 61, 0.6);
+  }
+  
+  .lower~.overlay-hugeinc{
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+      transition: opacity 0.5s, visibility 0s 0.5s;
+  }
+  
+  #op:checked~.overlay-hugeinc{
+      opacity: 1;
+      visibility: visible;
+      -webkit-transition: opacity 0.5s;
+      transition: opacity 0.5s;
+  }
+  
+  .overlay-hugeinc nav ul {
+      opacity: 0.4;
+      -webkit-transform: translateY(-25%) rotateX(35deg);
+      transform: translateY(-25%) rotateX(35deg);
+      -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+      transition: transform 0.5s, opacity 0.5s;
+  }
+  
+  #op:checked~.overlay-hugeinc nav ul {
+      opacity: 1;
+      -webkit-transform: rotateX(0deg);
+      transform: rotateX(0deg);
+  }
+  
+  #op:not(:checked)~.overlay-hugeinc nav ul {
+      -webkit-transform: translateY(25%) rotateX(-35deg);
+      transform: translateY(25%) rotateX(-35deg);
+  }
+  
+/* End of the Menu */
