@@ -1,0 +1,198 @@
+<html>
+<head>
+  <title>Internet Engineering</title>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/x-icon" href="img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+    <input type="checkbox" id="op"></input>
+    <div class="lower">
+      <label for="op" style="font-size: 80px; position: absolute; top: -2px; left: 20px;">≡</label>
+    </div>
+    <div class="overlay overlay-hugeinc" style="z-index: 1;">
+        <label for="op"></label>
+        <nav>
+            <ul>
+                <li><a href="#header_part">01 Start</a></li>
+                <li><a href="#topics">02 Course Lectures</a></li>
+                <li><a href="#books">03 Related Books</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+
+    <div class="container" id = "header_part">
+
+        <div class="box_parts header_container">
+            <img src="img/Header.jpg" id= "header_img">
+            <h2 id="header_centered_first_text">INTERNET<br/>ENGINEERING</h2>
+            <h1 id="header_centered_second_text">IS WHAT WE ARE GOING TO<br/> LEARN IN THIS COURSE</h1>
+            <button id="btn"><a href="#books" id="header_btn_link">See This Course Related Books</a></button>    
+        </div>
+
+        <div class="box_parts" id = "topics">
+            <div id='title_div' class="flex-container">
+                <div class="card">
+                    <img src="img/http_icon.png" class="avatar">
+                    <h3>HTTP</h3>
+                    <P>The Hypertext Transfer
+                        Protocol is an application layer protocol.
+                        Communication between client computers and web servers is done by sending
+                        HTTP Requests and receiving HTTP Responses.</P>
+                </div>
+                <div class="card">
+                    <img src="img/css_icon.png" class="avatar">
+                    <h3>HTML CSS</h3>
+                    <p>HTML (Hyper Text Markup
+                        Language) is the standard markup language for Web pages. CSS is the language we use to style an HTML document. CSS describes how HTML elements should be displayed.</p>
+                </div>
+                <div class="card">
+                    <img src="img/js_icon.png" class="avatar">
+                    <h3>JAVASCRIPT</h3>
+                    <p>JavaScript is the programming language of the Web. JavaScript often abbreviated to JS is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions.</p>
+                </div>
+                <div class="card">
+                    <img src="img/go_icon.png" class="avatar">
+                    <h3>GOLANG</h3>
+                    <p>Go language is a
+                        programming language initially developed at
+                        Google. It is a statically-typed language having syntax similar to that of C.
+                        Go is used to create computer programs.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box_parts" id = "books">
+            <h5 id="book_title">MOST POPULAR BOOKS</h5>
+            <div id='books_div' class="flex-container">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="img/Book1-1.jpg" class="book_img">
+                      <h5 style="padding-top: 5px;">By David Flanagar</h5>    
+                      <h5>Seventh Edition</h5>
+                      <h5>Published at 2020</h5>
+                  </div>
+                  <div class="flip-card-back">
+                    <h1 style="margin-top: 150px;">Price : 23.99 $</h1>
+                    <button id="btn" style="width: 200px; margin-top: 50px;"><a class="button" href="#popup1" id="header_btn_link">Buy</a></button>
+                  </div>
+                </div>
+              </div>
+
+              <div id="popup1" class="overlay">
+                <div class="popup">
+                    <a class="close" href="#books">&times;</a>
+                    <h2>Start Reading now</h2>
+                    <div class="flex-container" style="margin-top: 10px;">
+                        <div><img src="img/Book1-1.jpg" class="book_img"></div>
+                        <div style="width: 400px; text-align: justify; margin-left: 20px;">
+                            <p>
+                                JavaScript is the programming language of the web and is used by more software developers today than any other programming language. For nearly 25 years this best seller has been the go-to guide for JavaScript programmers. The seventh edition is fully updated to cover the 2020 version of JavaScript, and new chapters cover classes, modules, iterators, generators, Promises, async/await, and metaprogramming. You’ll find illuminating and engaging example code throughout.
+                                This book is for programmers who want to learn JavaScript and for web developers who want to take their understanding and mastery to the next level. It begins by explaining the JavaScript language itself, in detail, from the bottom up. It then builds on that foundation to cover the web platform and Node.js.
+                            </p>
+                            <button id = "p_btn" style="width: 200px; background-color: rgba(39, 149, 61, 0.6); border:none; border-radius: 12px;"><a class="button" href="https://www.amazon.com/gp/product/1491952024/" target="_blank" id = "header_btn_link_popup">Buy</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="img/Book2-1.jpg" class="book_img">
+                      <h5 style="padding-top: 5px;">By Robin Wieruch</h5>    
+                      <h5>2022 Edition</h5>
+                      <h5>Published at 2022</h5> 
+                </div>
+                <div class="flip-card-back">
+                  <h1 style="margin-top: 150px;">Price : 29.99 $</h1>
+                  <button id="btn" style="width: 200px; margin-top: 50px;"><a class="button" href="#popup2" id="header_btn_link">Buy</a></button>
+                </div>
+              </div>
+              </div>
+
+              <div id="popup2" class="overlay">
+                <div class="popup">
+                    <a class="close" href="#books">&times;</a>
+                    <h2>Start Reading now</h2>
+                    <div class="flex-container" style="margin-top: 10px;">
+                        <div><img src="img/Book2-1.jpg" class="book_img"></div>
+                        <div style="width: 400px; text-align: justify; margin-left: 20px;">
+                            <p>
+                                The Road to React: Your journey to master React.js in JavaScript - is a comprehensive and pragmatic yet concise React feat. Hooks book.
+
+What you will learn.
+
+In "The Road to React" you will learn about all the fundamentals of React.js with Hooks while building a full-blown React application step by step. While you create the React application, every chapter will introduce you to a new React key feature. However, there is more than only the fundamentals: The book dives into related topics (e.g. React with TypeScript, Testing, Performance Optimizations) and advanced feature implementations like client- and server-side searching. At the end of the book, you will have a fully working deployed React application.
+
+Is it up to date?
+
+Programming books are usually outdated soon after their release, but since this book is self- published, I can update it as needed whenever a new version of something related to this book gets released.
+
+I am a beginner. Is this book for me?
+
+Yes. The book starts from zero and takes you through the learning experience step by step. Every chapter builds up on the learnings from the previous chapter. In addition, at the end of every chapter, exercises fortify your lessons learned. If you got stuck in a chapter, you will always find a reference URL to the status quo of the actual code.
+                            </p>
+                            <button id = "p_btn" style="width: 200px; background-color: rgba(39, 149, 61, 0.6); border:none; border-radius: 12px;"><a class="button" href="https://www.amazon.com/Road-learn-React-pragmatic-React-js/dp/172004399X/ref=d_pd_sbs_sccl_2_3/130-5751593-0029724?pd_rd_w=m9yJh&content-id=amzn1.sym.3676f086-9496-4fd7-8490-77cf7f43f846&pf_rd_p=3676f086-9496-4fd7-8490-77cf7f43f846&pf_rd_r=MN81G3T0MAX9FR9FAENV&pd_rd_wg=XsyuS&pd_rd_r=c3fff6b6-0e60-41bd-b038-2e16c81b5390&pd_rd_i=172004399X&psc=1" target="_blank" id = "header_btn_link_popup">Buy</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="img/Book3-1.jpg" class="book_img">
+                      <h5 style="padding-top: 5px;">By Caleb Doxsey</h5>    
+                      <h5>First Edition</h5>
+                      <h5>Published at 2016</h5>  
+                </div>
+                <div class="flip-card-back">
+                  <h1 style="margin-top: 150px;">Price : 16.49 $</h1>
+                  <button id="btn" style="width: 200px; margin-top: 50px;"><a class="button" href="#popup3" id="header_btn_link">Buy</a></button>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div id="popup3" class="overlay">
+            <div class="popup">
+                <a class="close" href="#books">&times;</a>
+                <h2>Start Reading now</h2>
+                <div class="flex-container" style="margin-top: 10px;">
+                    <div><img src="img/Book3-1.jpg" class="book_img"></div>
+                    <div style="width: 400px; text-align: justify; margin-left: 20px;">
+                        <p>
+                            Perfect for beginners familiar with programming basics, this hands-on guide provides an easy introduction to Go, the general-purpose programming language from Google. Author Caleb Doxsey covers the languageâ??s core features with step-by-step instructions and exercises in each chapter to help you practice what you learn.
+
+Go is a general-purpose programming language with a clean syntax and advanced features, including concurrency. This book provides the one-on-one support you need to get started with the language, with short, easily digestible chapters that build on one another. By the time you finish this book, not only will you be able to write real Go programs, you'll be ready to tackle advanced techniques.
+                        </p>
+                        <button id = "p_btn" style="width: 200px; background-color: rgba(39, 149, 61, 0.6); border:none; border-radius: 12px;"><a class="button" href="https://www.amazon.fr/dp/1491941952?psc=1&th=1&linkCode=gs2&tag=vhpoet0ca-21" target="_blank" id = "header_btn_link_popup">Buy</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+        <div class="footer">
+            <div id="footer_left">
+                <table id="left_btn_table">
+                    <tr>
+                        <td><a href="index.html" id="left_btn_link">CONTACT US</a></td>
+                        <td><a href="index.html" id="left_btn_link">CLASS INFO</a></td>
+                        <td><a href="index.html" id="left_btn_link">TERMS</a></td>
+                        <td><a href="index.html" id="left_btn_link">PRIVACY POLICY</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="footer_right">
+                <p style="color: white; font-size: 14px; padding-top: 10px;">Desined and Developed By Mahdi Rahmani</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
